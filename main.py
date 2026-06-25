@@ -5,7 +5,7 @@ from pathlib import Path
 import feedparser
 import requests
 
-from config import FEED_URL, NTFY_TOPIC, CHECK_INERVAL_SECONDS
+from config import FEED_URL, NTFY_TOPIC
 
 STATE_FILE = Path("state.json")
 
