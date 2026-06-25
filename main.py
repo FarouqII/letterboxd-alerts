@@ -23,7 +23,7 @@ def saveLastSeen(entryID):
 def sendNotif(title, link):
     requests.post(
         f"https://ntfy.sh/{NTFY_TOPIC}",
-        data=f"{title}\n{link}".encode("utf-8"),
+        data=f"{title}".encode("utf-8"),
         headers={
             "Title": "New Letterboxd Log"
         },
